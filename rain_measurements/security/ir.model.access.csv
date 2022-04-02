@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+rain_measurements.access_rain_measurement_daily,access_rain_measurement_daily,rain_measurements.model_rain_measurement_daily,base.group_user,1,1,1,1

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <menuitem id="rain_menu_root" name="Rain Measurements">
+        <menuitem id="daily_records_menu" name="Daily rain measurements">
+            <menuitem id="model_rain_menu_action" action="rain_measurements_action"/>
+        </menuitem>
+    </menuitem>
+
+</odoo>

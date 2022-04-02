@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="rain_measurements_action" model="ir.actions.act_window">
+        <field name="name">Rain Record Daily</field>
+        <field name="res_model">rain.measurement.daily</field>
+        <field name="view_mode">tree,form,graph</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            Define a new rain measurement record
+            </p>
+        </field>
+    </record>
+
+    <!-- Tree view -->
+     <record id="view_rain_measurements_tree" model="ir.ui.view">
+        <field name="name">rain.measurement.daily.tree</field>
+        <field name="model">rain.measurement.daily</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Tabular Records" create="true">
+                <field name="date"/>
+                <field name="height"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    
+    <!-- Graph view -->
+    <record id="view_rain_measurements_graph" model="ir.ui.view">
+        <field name="name">rain.measurement.daily.graph</field>
+        <field name="model">rain.measurement.daily</field>
+        <field name="type">graph</field>
+        <field name="arch" type="xml">
+            <graph string="Graph View">
+                <field name="date"/>
+                <field name="height"/>
+            </graph>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,1 @@
+from . import rain_measurement_daily
